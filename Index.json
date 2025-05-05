@@ -1,6 +1,5 @@
 [
-    "https://github.com/Terafy/edixor-extensions/main/Extensions/NewDesign/extensions.json",  
-    "https://github.com/Terafy/edixor-extensions/main/Extensions/NewDesign/extensions.json",  
-    "https://github.com/Terafy/edixor-extensions/main/Extensions/NewDesign/extensions.json"
+    "https://raw.githubusercontent.com/Terafy/edixor-extensions/main/Extensions/NewDesign/extensions.json",
+    "https://raw.githubusercontent.com/Terafy/edixor-extensions/main/Extensions/UpdateDebugLog/extensions.json"
 ]
   
