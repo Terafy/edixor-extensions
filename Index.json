@@ -3,6 +3,10 @@
     "json": "Extensions/NewDesign/extensions.json",
     "zip": "Extensions/NewDesign/extensions.zip"
   },
+  "TestExtren": {
+    "json": "Extensions/TestExtren/extensions.json",
+    "zip": "Extensions/TestExtren/extensions.zip"
+  },
   "UpdateDebugLog": {
     "json": "Extensions/UpdateDebugLog/extensions.json",
     "zip": "Extensions/UpdateDebugLog/extensions.zip"
