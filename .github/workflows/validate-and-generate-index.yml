@@ -1,0 +1,37 @@
+name: Validate and Generate Index
+
+on:
+  pull_request:
+    paths:
+      - 'Extensions/**'
+      - 'Index.json'
+
+jobs:
+  validate-and-generate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Validate extensions
+      run: |
+        echo "Validating extensions..."
+        node validateExtensions.js
+        echo "Extensions validated successfully."
+
+    - name: Generate updated Index.json
+      run: |
+        echo "Generating updated Index.json..."
+        node generateIndex.js
+        echo "Index.json generated successfully."
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+        git add Index.json
+        git commit -m "Update Index.json with new extensions"
+        git push origin HEAD:main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
