@@ -1,5 +1,10 @@
-[
-    "https://raw.githubusercontent.com/Terafy/edixor-extensions/main/Extensions/NewDesign/extensions.json",
-    "https://raw.githubusercontent.com/Terafy/edixor-extensions/main/Extensions/UpdateDebugLog/extensions.json"
-]
-  
+{
+  "NewDesign": {
+    "json": "Extensions/NewDesign/extensions.json",
+    "zip": "Extensions/NewDesign/extensions.zip"
+  },
+  "UpdateDebugLog": {
+    "json": "Extensions/UpdateDebugLog/extensions.json",
+    "zip": "Extensions/UpdateDebugLog/extensions.zip"
+  }
+}
