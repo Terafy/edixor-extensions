@@ -1,7 +1,6 @@
 {
     "name": "test",
     "description": "test description",
-    "version": "1.0",
-    "zipUrl": "https://raw.githubusercontent.com/Terafy/edixor-extensions/main/Extensions/NewDesign/extensions.zip" 
+    "version": "1.0"
 }
   
