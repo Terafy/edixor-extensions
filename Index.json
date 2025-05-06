@@ -2,8 +2,7 @@
   "NewDesign": {
     "name": "NewDesign",
     "description": "Adds new style and layout in edixor",
-    "version": "1.0",
-    "zipUrl": "https://raw.githubusercontent.com/Terafy/edixor-extensions/main/Extensions/NewDesign/extensions.zip",
+    "version": "1.5",
     "json": "Extensions/NewDesign/extensions.json",
     "zip": "Extensions/NewDesign/extensions.zip"
   },
@@ -11,7 +10,6 @@
     "name": "test",
     "description": "test description",
     "version": "1.0",
-    "zipUrl": "https://raw.githubusercontent.com/Terafy/edixor-extensions/main/Extensions/NewDesign/extensions.zip",
     "json": "Extensions/TestExtren/extensions.json",
     "zip": "Extensions/TestExtren/extensions.zip"
   },
@@ -19,7 +17,6 @@
     "name": "Update Debug Log",
     "description": "мне лень тут что-то добавлять",
     "version": "1.0",
-    "zipUrl": "https://raw.githubusercontent.com/Terafy/edixor-extensions/main/Extensions/UpdateDebugLog/extensions.zip",
     "json": "Extensions/UpdateDebugLog/extensions.json",
     "zip": "Extensions/UpdateDebugLog/extensions.zip"
   }
