@@ -1,13 +1,11 @@
-name: Example Workflow
+name: Generate Index.json
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
-  workflow_dispatch: 
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -17,21 +15,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Run build
-      run: npm run build
+    - name: Run Python script
+      run: python .github/scripts/generate_index.py
 
     - name: Commit and push changes (if any)
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git add .
-        git commit -m "Automated build"
+        git add Index.json
+        git diff --cached --quiet || git commit -m "Update Index.json"
         git push
