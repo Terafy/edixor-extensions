@@ -3,7 +3,7 @@ import os
 import sys
 
 ext_dir = "Extensions"
-index_file = "Index.json"
+index_file = "index.json"
 required_fields = ["name", "version"]
 
 old_index = {}
